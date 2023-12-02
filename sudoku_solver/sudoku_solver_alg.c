@@ -1,3 +1,7 @@
+//To run this code you need to update the fopen() file path argument!!!
+
+//And also have a file with a sudoku grid to solve! (like file_sample_sudoku.txt in this folder)
+
 #include <stdio.h>
 #define true 1
 #define false 0
