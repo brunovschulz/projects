@@ -16,9 +16,9 @@ int main(){
     FILE *arq;
     int num, x = 0 , y = 0;
 
-    arq = fopen("C:\\bruno_vscode\\c\\projetos\\sudoku_solver\\sudoku.txt", "r");
+    arq = fopen("C:your//file//path//file.txt", "r"); //CHANGE THIS!!!
 
-    if(!arq){printf("Erro no arquivo.\n"); return -1;}
+    if(!arq){printf("File error.\n"); return -1;}
 
     for(int i=0; i<81; i++){
         fscanf(arq, "%d", &num);
@@ -27,13 +27,11 @@ int main(){
 
     printGrid();
 
-    if(solve(0,0)==false) printf("Não funcionou.\n");
+    if(solve(0,0)==false) printf("There is no solution.\n");
     
-    else printf("Funcionou!\n");
+    else printf("There is a solution!\n");
 
     printGrid();
-
-    //while(!isCompleted(matriz)){}
 
     return 0;
 }
